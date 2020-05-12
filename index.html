@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Clipboard landing page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+  body{
+  margin:0;
+  text-align: center;
+  background-image: url(images/bg-header-desktop.png);
+  background-repeat: no-repeat;
+  }
+ 
+ h1, h2, h3, h4, h5, h6{
+ color: #4D565D;
+ font-family: 'Bai Jamjuree', sans-serif;
+ font-weight:600;
+ }
+ 
+ p{
+ color: #B3B4B6;
+ font-family: 'Bai Jamjuree', sans-serif;
+ font-weight:400;
+ }
+ 
+ 
+ .Search {
+ text-align: left;
+ display:inline-block;
+    background-color: #e7e8e96b;
+    padding: 35px;
+}
+
+			.btn-ios{
+background-color: #26BBA5;
+color: white;
+width: 180px;
+padding: 14px;
+margin-top: 30px;
+margin-bottom: 80px;
+border-radius: 40px;
+border: none;
+border-bottom: solid 3px #329882;
+}
+			
+.btn-ios:active{
+background-color: #5DCCBB;
+color: white;
+width: 180px;
+padding: 14px;
+margin-top: 30px;
+margin-bottom: 80px;
+border-radius: 40px;
+border: none;
+border-bottom: solid 3px #329882;
+			}
+.btn-mac{
+background-color: #6174FF;
+color: white;
+width: 180px;
+padding: 14px;
+margin-top: 30px;
+margin-bottom: 80px;
+border-radius: 40px;
+border: none;
+border-bottom: solid 3px #5160D5;
+			}
+.btn-mac:active{
+background-color: #8896FF;
+	color: white;
+width: 180px;
+padding: 14px;
+margin-top: 30px;
+margin-bottom: 80px;
+border-radius: 40px;
+border: none;
+border-bottom: solid 3px #5160D5;
+}
+
+
+.logo {
+ transition: all 1s;
+    width: 55px;
+}
+
+.logo:hover {
+    width: 60px;
+	
+}
+
+.computer {
+ background: url(slideshow.jpg);
+  height: 100%;
+  width: 300%;
+  position: absolute;
+  top:0;
+  left:0;
+  animation: computer 10s linear infinite;
+    padding: 23px;
+    z-index: 1;
+  display:inline-block;
+    width: 300px;
+ transition: all 4s;
+}
+.computer {
+  position: relative;
+  overflow: hidden;
+}
+
+.computer:hover {
+cursor: pointer;
+    width: 310px;
+}
+@keyframes computer {
+  0%    { right: 0; }
+  100%  { right: -200%; }
+}
+
+.creat{
+border-radius: 5px;
+padding: 8px;
+display:inline-block;
+  -webkit-transition: background-color 2s ease-out;
+  -moz-transition: background-color 2s ease-out;
+  -o-transition: background-color 2s ease-out;
+  transition: background-color 2s ease-out;
+}
+.plain{
+border-radius: 5px;
+padding: 8px;
+display:inline-block;
+  -webkit-transition: background-color 2s ease-out;
+  -moz-transition: background-color 2s ease-out;
+  -o-transition: background-color 2s ease-out;
+  transition: background-color 2s ease-out;
+}
+.sneak{
+border-radius: 5px;
+padding: 8px;
+display:inline-block;
+  -webkit-transition: background-color 2s ease-out;
+  -moz-transition: background-color 2s ease-out;
+  -o-transition: background-color 2s ease-out;
+  transition: background-color 2s ease-out;
+}
+
+
+.creat:hover{
+background-color: #8e8b8b2e;
+display:inline-block;
+}
+.plain:hover{
+background-color: #8e8b8b2e;
+display:inline-block;
+}
+.sneak:hover{
+background-color: #8e8b8b2e;
+display:inline-block;
+}
+
+.link{
+display:inline-block;
+color: #7C7D82;
+font-family: 'Bai Jamjuree', sans-serif;
+ font-weight:400;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.link-2{
+display:inline-block;
+color: #7C7D82;
+font-family: 'Bai Jamjuree', sans-serif;
+ font-weight:400;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+link{
+}
+
+.Fa-Tw{
+display: inline-block;
+text-align: right;
+}
+
+
+
+.Fa{
+}
+.In{
+}
+.Tw{
+}
+.Git{
+}
+
+.Fa:active{
+filter: brightness(1.15);
+}
+.In:active{
+filter: brightness(1.15);
+}
+.Tw:active{
+filter: brightness(1.15);
+}
+.Git:active{
+filter: brightness(1.15);
+}
+
+
+
+.link-1-div{
+text-align: left;
+padding: 32px;
+display:inline-block;
+}
+.link-2-div{
+text-align: left;
+padding: 32px;
+display:inline-block;
+}
+.link-3-div{
+text-align: left;
+padding: 32px;
+display:inline-block;
+}
+
+.link{
+ color: #26BAA0;
+}
+
+footer{
+margin:0;
+padding: 0;
+background-color: #8e8b8b2e;
+}
+
+
+
+.computer-2:hover {
+cursor: pointer;
+    width: 350px;
+    box-shadow: 0px 5px 25px 2px #333;
+}
+
+.logo-2 {
+    width: 96px;
+    display: inline-block;
+    padding: 19px;
+}
+
+
+
+.computer-2 {
+
+ transition: all 4s;
+    z-index: 1;
+    width: 322px;
+  box-shadow: 0px 2px 9px 1px #0B272E;
+}
+
+    .attribution { font-size: 11px; text-align: center;padding-bottom: 23px; }
+    .attribution a { color: hsl(228, 45%, 44%);padding-bottom: 23px; }
+  </style>
+</head>
+<body>
+
+
+  <img class="logo" src="images/logo.svg" alt="logo">
+
+  <h1>A history of everything you copy</h1>
+
+  <p>Clipboard allows you to track and organize everything you 
+  copy. Instantly<br> access your clipboard on all your devices.</p>
+<br>
+<br>
+  	<button class="btn-ios">Download for iOS</button>
+			<button class="btn-mac">Download for Mac</button>
+
+<br>
+<br>
+  <h1>Keep track of your snippets</h1>
+
+  <p>Clipboard instantly stores any item you copy in the cloud, 
+  meaning you<br> can access your snippets immediately on all your 
+  devices. Our Mac and iOS<br> apps will help you organize everything.</p>
+<br>
+<br>
+<br>
+   <img class="computer" src="images/image-computer.png" alt="computer" />
+   <div class="Search">
+  
+  <h2>Quick Search</h2>
+
+ <p> Easily search your snippets by content,<br> category, web address, application, and more.</p>
+
+    <h2>iCloud Sync  </h2>
+
+  <p>Instantly saves and syncs snippets<br> across all your devices.</p>
+
+    <h2>Complete History  </h2>
+
+  <p>Retrieve any snippets from the first<br> moment you started using the app.</p>
+</div>
+<br>
+    <h1>Access Clipboard anywhere  </h1>
+
+  <p>Whether you’re on the go, or at your computer, you can access<br> all your Clipboard 
+  snippets in a few simple clicks.</p>
+<br>
+<br>
+<img class="computer-2" src="images/image-devices.png" alt="computer-2" />
+<br>
+<br>
+    <h1>Supercharge your workflow  </h1>
+  <p>We’ve got the tools to boost your productivity.</p>
+  <br>
+<br>
+<br>
+<br>
+  <div class="creat">
+     <img class="a" src="images/icon-blacklist.svg" alt="computer" />
+    <h2>Create blacklists  </h2>
+
+ <p> Ensure sensitive information <br>never makes its way to your<br> clipboard by excluding certain sources.<br></p>
+</div>
+  <div class="plain">
+  <img class="paper" src="images/icon-text.svg" alt="computer" />
+    <h2>Plain text snippets  </h2>
+
+  <p>Remove unwanted formatting<br> from copied text for a <br>consistent look.</p>
+  </div>
+    <div class="sneak">
+	   <img class="eyes" src="images/icon-preview.svg" alt="computer" />
+    <h2>Sneak preview  </h2>
+  <p>Quick preview of all snippets<br> on your Clipboard for easy<br> access.</p>
+  </div>
+  <br>
+<br>
+<br>
+<br>
+<img class="logo-2" src="images/logo-google.png" alt="computer" />
+<img class="logo-2" src="images/logo-hp.png" alt="computer" />
+<img class="logo-2" src="images/logo-ibm.png" alt="computer" />
+<img class="logo-2" src="images/logo-microsoft.png" alt="computer" />
+<img class="logo-2" src="images/logo-vector-graphics.png" alt="computer" />
+    <h1>Clipboard for iOS and Mac OS  </h1>
+
+  <p>Available for free on the App Store. Download for Mac or iOS,<br> sync with iCloud 
+  and you’re ready to start adding to your clipboard.</p>
+
+  <button class="btn-ios">Download for iOS</button>
+			<button class="btn-mac">Download for Mac</button>
+
+
+<br>
+<br>
+<br>
+
+
+<footer>
+
+
+<div class="link">
+<a class="link" href="#"><img class="logo" src="images/logo.svg" alt="logo"></a>
+<div class="link-1-div">
+<a class="link" href="#">FAQs</a><br><br>
+<a class="link" href="#">Contact Us</a>
+</div>
+
+<div class="link-2-div">
+<a class="link" href="#">Privacy Policy</a><br><br>
+<a class="link" href="#">Press Kit</a>
+</div>
+
+<div class="link-3-div">
+<a class="link" href="#">Install Guide</a>
+  </div>
+  <div class="Fa-Tw">
+<a class="Fa" href="https://www.facebook.com/"> <img class="Fa" src="images/icon-facebook.svg" alt="computer" /></a>
+<a class="Tw" href="https://twitter.com/home">  <img class="Tw" src="images/icon-twitter.svg" alt="computer" /></a>
+<a class="In" href="https://www.instagram.com/">   <img class="In" src="images/icon-instagram.svg" alt="computer" /></a>
+<a class="Git" href="https://github.com/Abdurahmanm2020">    <img class="Git" src="images/github-mark.png" alt="computer" /></a>
+</div>
+</div>
+ 
+
+    <!--<p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </p>-->
+  </footer>
+</body>
+</html>
